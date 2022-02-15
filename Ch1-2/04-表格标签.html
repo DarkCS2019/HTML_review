@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+<body>
+    <!-- table表示表格的整体 -->
+    <!-- tr表示表格的每一行 -->
+    <!-- td表示表格的单元格 -->
+
+    <!-- 创建表格时一行行的写 -->
+    <!-- border:表格的边框 -->
+    <!-- width:表格的宽度 -->
+    <!-- height:表格的高度 -->
+
+    <!-- caption：表格整体的大标题 -->
+    <!-- th：表格一列的小标题 -->
+
+    <!-- thead:表格头部 -->
+    <!-- tbody：表格主体 -->
+    <!-- tfoot：表格底部 -->
+    <table border = "1" width = "300" height = "300">
+        <caption><h3>学生成绩单</h3></caption>
+        <!-- 表格的头部 -->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+        <!-- 表格的身体 -->
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <!-- 保留 合并竖直的两格-->
+                <td rowspan="2">100分</td>
+                <td>考得很好!</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <!-- 删除 -->
+                <!-- <td>100分</td> -->
+                <td>考得很好!</td>
+            </tr>
+        </tbody>
+        <!-- 表格的底部 -->
+        <tfoot>
+            <tr>
+                <td>平均</td>
+                <td>100分</td>
+                <td>都考得很好!</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
